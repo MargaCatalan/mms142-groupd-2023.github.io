@@ -87,5 +87,6 @@ div {
 .flex-item {
     flex: 1; /* Distribute available space equally among items */
     object-fit: cover; /* Scale the image while maintaining its aspect ratio */
+    height: 100%; /* Ensure the image takes up the full height of the container */
 }
 
