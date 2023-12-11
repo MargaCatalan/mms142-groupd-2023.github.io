@@ -85,7 +85,6 @@ div {
 .flex-item img{
   flex: 1; /* Distribute available space equally among items */
   max-width: 100%; /* Maximum width of 100% (to fit the container) */
-  height: auto; /* Allow the height to adjust based on the image content */
   object-fit: contain; /* Maintain aspect ratio without cropping */
 }
 
