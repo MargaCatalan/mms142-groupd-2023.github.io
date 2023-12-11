@@ -78,7 +78,8 @@ div {
 /* Container for the images and captions */
 .lms-container {
   display: flex;
-    height: 300px; /* Set a fixed height for the container */
+  height: auto;
+  gap: 10px;
 }
 
 /* Style for each flex item (image) */
