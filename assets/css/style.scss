@@ -78,7 +78,16 @@ div {
 /* Grid for LMS Images */
 .lms-container {
   display: flex;
+  width: 100vq;
   height: auto;
   grid-gap: 10px;
+}
+
+/* Style for each flex item (image) */
+.flex-item {
+    flex: 1; /* Distribute available space equally among items */
+    object-fit: cover; /* Scale the image while maintaining its aspect ratio */
+    height: 100%; /* Ensure the image takes up the full height of the container */
+    max-width: 50%; /* Set a maximum width of 50% to fill the screen horizontally */
 }
 
