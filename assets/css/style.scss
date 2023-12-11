@@ -75,15 +75,14 @@ div {
   margin-bottom: 20px; /* Add margin to create space between rows */
 }
 
+/* Container for the images and captions */
 .lms-container {
   display: flex;
-  justify-content: space-between; /* Adjust the space between the columns */
   gap: 10px; /* Gap between images and captions */
 }
 
 /* Style for each image and caption container */
 .lms-container > div {
-  flex: 1; /* Each column takes up equal width */
   display: flex;
   flex-direction: column;
 }
@@ -91,7 +90,7 @@ div {
 /* Style for each image */
 .lms-container img {
   max-width: 100%; /* Maximum width of 100% to fit the container */
-  height: auto; /* Allow the height to adjust based on the image content */
+  height: 100%; /* Allow the height to adjust based on the container */
   object-fit: contain; /* Maintain aspect ratio without cropping */
 }
 
