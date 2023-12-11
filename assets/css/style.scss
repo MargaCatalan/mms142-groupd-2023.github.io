@@ -75,5 +75,10 @@ div {
   margin-bottom: 20px; /* Add margin to create space between rows */
 }
 
-
+/* Grid for LMS Images */
+.lms-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px
+}
 
