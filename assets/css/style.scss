@@ -75,9 +75,15 @@ div {
   margin-bottom: 20px; /* Add margin to create space between rows */
 }
 
+/* Style for each flex item (image) */
+.flex-item {
+  flex: 1;
+  object-fit: cover;
+
 /* Grid for LMS Images */
 .lms-container {
   display: flex;
+  height: 300px; /* Set a fixed height for the container */
   grid-gap: 10px
 }
 
