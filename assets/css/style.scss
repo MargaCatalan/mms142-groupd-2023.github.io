@@ -85,7 +85,8 @@ div {
 
 /* Style for each flex item (image) */
 .flex-item {
-  max-width: 100%;
-  height: 100%;
+  flex: 1; /* Distribute available space equally among items */
+  max-width: 50%; /* Set a maximum width of 50% to fill the screen horizontally */
+  object-fit: contain; /* Maintain aspect ratio without cropping */
 }
 
