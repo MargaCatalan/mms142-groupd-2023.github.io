@@ -77,15 +77,17 @@ div {
 
 /* Grid for LMS Images */
 .lms-container {
-  display: flex;
-  width: auto;
-  height: auto;
+  width: 100vw; /* Set width to 100% of the viewport width */
+  height: auto; /* Allow the height to adjust based on the images */
+  display: grid;
+  grid-template-columns: auto auto; /* Automatically adjust columns based on content */
   grid-gap: 10px;
 }
 
 /* Style for each flex item (image) */
-.flex-item {
-  flex: 1; /* Distribute available space equally among items */
-  max-width: 100%; /* Set a maximum width of 50% to fill the screen horizontally */
+.flex-item img{
+  max-width: 100%; /* Set a maximum width of 100% to fill the screen horizontally */
+  height: auto; /* Allow the height to adjust based on the images */
+  object-fit: contain; /* Maintain aspect ratio without cropping */
 }
 
