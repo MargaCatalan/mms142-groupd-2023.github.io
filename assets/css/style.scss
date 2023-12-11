@@ -77,26 +77,12 @@ div {
 
 /* Container for the images and captions */
 .lms-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Variable columns, min width 200px */
-  gap: 10px; /* Gap between images and captions */
-}
-
-/* Style for each image and caption container */
-.lms-container > div {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally within the container */
+    height: 300px; /* Set a fixed height for the container */
 }
 
-/* Style for each image */
-.lms-container img {
-  width: 100%; /* Ensure the image fills the width of its container */
-  height: auto; /* Allow the height to adjust based on the image content */
-  object-fit: contain; /* Maintain aspect ratio without cropping */
-}
-
-/* Style for the caption */
-.lms-container p {
-  margin-top: 10px; /* Adjust the space between the image and the caption */
+/* Style for each flex item (image) */
+.flex-item {
+    flex: 1; /* Distribute available space equally among items */
+    object-fit: cover; /* Scale the image while maintaining its aspect ratio */
 }
